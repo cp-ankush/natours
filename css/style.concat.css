@@ -1340,7 +1340,7 @@ body {
   transform: scale(80); }
   @media only screen and (max-width: 37.5em) {
     .navigation__checkbox:checked ~ .navigation__background {
-      transform: scale(60); } }
+      transform: scale(40); } }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
