@@ -114,6 +114,9 @@
   // Functionality
   &__checkbox:checked ~ &__background {
     transform: scale(80);
+    @include respond(phone) {
+      transform: scale(60);
+    }
   }
 
   &__checkbox:checked ~ &__nav {
