@@ -14,10 +14,6 @@ html {
   //   font-size: 50%;
   // }
 
-  @include respond(big-desktop) {
-    font-size: 75%; // 1rem = 12px, 8px/16px = 75%
-  }
-
   @include respond(tab-land) {
     font-size: 56.25%; // 1rem = 9px, 8px/16px = 56.25%
   }
@@ -25,6 +21,11 @@ html {
   @include respond(tab-port) {
     font-size: 50%; // 1rem = 8px, 8px/16px = 50%
   }
+
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12px, 8px/16px = 75%
+  }
+
 }
 
 body {
@@ -34,4 +35,9 @@ body {
   @include respond(tab-port) {
     padding: 0;
   }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
 }
